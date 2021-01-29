@@ -1,5 +1,5 @@
 /* Theme: Niwax - Creative Web Design & Digital Marketing Agency HTML5 Template
-Author: Rajesh-Doot	
+Author: Rajesh-Doot
 File Description: Main JS file of the template*/
 (function ($) {
   "use strict";
@@ -13,7 +13,7 @@ File Description: Main JS file of the template*/
     disableAt: false,
     customToggle: $toggle,
     levelSpacing: 10,
-     navTitle: 'Niwax',
+     navTitle: 'Cremir',
      levelTitles: true,
     levelTitles: true,
      labelClose: false,
@@ -27,7 +27,7 @@ File Description: Main JS file of the template*/
   // Nav call plugin
   var Nav = $main_nav.hcOffcanvasNav(defaultOptions);
 
-  //Sticky Header 
+  //Sticky Header
   function updateScroll() {
     if ($(window).scrollTop() >= 80) {
       $(".navfix").addClass('sticky');
@@ -122,11 +122,11 @@ File Description: Main JS file of the template*/
   //Owl-Carousel - video testimonial
   var owl = $('.video-testimonials');
   owl.owlCarousel({
-    items: 2,  
+    items: 2,
     nav: false,
     dots: false,
     autoplay: false,
-    autoplayTimeout: 3500,  
+    autoplayTimeout: 3500,
     smartSpeed: 1500,
     margin: 20,
     responsive: {
@@ -177,12 +177,12 @@ File Description: Main JS file of the template*/
         items: 3
       },
     }
-  }); 
+  });
 
-   //Owl-Carousel -portfolio slide 
+   //Owl-Carousel -portfolio slide
   var owl = $('.porto-slide');
-  owl.owlCarousel({ 
-    items:1,  
+  owl.owlCarousel({
+    items:1,
     loop: true,
     autoplay: true,
     margin: 10,
@@ -215,12 +215,12 @@ File Description: Main JS file of the template*/
         items: 1
       },
     }
-  }); 
+  });
 
     //Owl-Carousel -single slide
   var owl = $('.single-slide');
-  owl.owlCarousel({ 
-    items:1,  
+  owl.owlCarousel({
+    items:1,
     loop: true,
     autoplay: true,
     margin: 10,
@@ -351,9 +351,9 @@ File Description: Main JS file of the template*/
     }
   });
 
-  
 
-  //Counter Up	
+
+  //Counter Up
   $(".counter").counterUp({
     delay: 10,
     time: 2500,
@@ -366,7 +366,7 @@ File Description: Main JS file of the template*/
       type: 'background'
     }
   });
-  //Portfolio Filter		
+  //Portfolio Filter
   $('.card-list').imagesLoaded(function () {
     // init Isotope
     var $grid = $('.card-list').isotope({

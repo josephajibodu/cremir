@@ -21,7 +21,7 @@
                                 <div class="contct-heading">Cremir Contacts</div>
                                 <div class="inquiry-card-nn hrbg">
                                     <div class="title-inq-c">FOR HR DEPARTMENT</div>
-                                    <ul><li class="mb0"><img src="images/flags/us.svg" alt="us office" class="flags-size"> <a href="tel:2348167297386" >+234 816 7297 386</a></li></ul>
+                                    <ul><li class="mb0"><img src="images/flags/ng.svg" alt="Nigeria office" class="flags-size"> <a href="tel:2348167297386" >+234 816 7297 386</a></li></ul>
                                 </div>
                                 <div class="inquiry-card-nn">
                                     <div class="title-inq-c">FOR SALES DEPARTMENT</div>
@@ -45,122 +45,29 @@
         <!--Mobile Menu-->
         <nav id="main-nav">
             <ul class="first-nav">
-                <li><a href="#">Home</a>
-                    <ul>
-                        <li>
-                            <a href="#">Homepage Demos</a>
-                            <ul>
-                                <li><a href="digital-agency.html">Digital Agency</a></li>
-                                <li><a href="digital-agency-dark.html">Digital Agency Dark</a></li>
-                                <li><a href="web-design-agency.html">Web Design Agency</a></li>
-                                <li><a href="web-design-agency-dark.html">Web Design Agency Dark</a></li>
-                                <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                                <li><a href="digital-marketing-dark.html">Digital Marketing Dark</a></li>
-                                <li><a href="lead-generation.html">Lead Generation Agency</a></li>
-                                <li><a href="lead-generation-dark.html">Lead Generation Agency Dark</a></li>
-                                <li><a href="freelance-portfolio.html">Freelance Portfolio</a></li>
-                                <li><a href="freelance-portfolio-dark.html">Freelance Portfolio Dark</a></li>
-                                <li><a href="minimal-portfolio.html">Minimal Portfolio</a></li>
-                                <li><a href="creative-agency.html">Creative Agency</a></li>
-                                <li><a href="branding-agency.html">Branding  Agency</a></li>
-                                <li><a href="app-development.html">App Development Agency</a></li>
-                                <li><a href="modern-agency.html">Modern Agency</a></li>
-                                <li><a href="business-and-startup.html">Business & Startup</a></li>
-                                <li><a href="graphic-studio.html">Graphic Studio</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">One-Page Demos</a>
-                            <ul>
-                                <li><a href="graphic-studio-onepage.html">Graphic Studio</a></li>
-                                <li><a href="branding-agency-onepage.html">Branding  Agency</a></li>
-                                <li><a href="modern-agency-onepage.html">Modern Agency</a></li>
-                                <li><a href="business-and-startup-onepage.html">Business & Startups</a></li>
-                                <li><a href="creative-agency-onepage.html">Creative Agency</a></li>
-                                <li><a href="minimal-portfolio-onepage.html">Minimal Portfolio</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">Pages</a>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="why-us.html">Why Us</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="team-details.html">Team Single</a></li>
-                        <li><a href="case-study.html">Case Study</a></li>
-                        <li><a href="case-study-details.html">Case Study Single</a></li>
-                        <li><a href="mission-vision.html">Mission & Vision</a></li>
-                        <li><a href="development-process.html">Development Process</a></li>
-                        <li><a href="client-reviews.html">Client Reviews</a> </li>
-                        <li><a href="clients.html">Our Clients</a></li>
-                        <li><a href="get-quote.html">Contact Us</a> </li>
-                        <li><a href="career.html">Careers</a> </li>
-                        <li><a href="login.html">Login Page</a> </li>
-                        <li><a href="service-card.html">Service Card</a> </li>
-                        <li><a href="service-web.html">Service Web</a></li>
-                        <li><a href="service-app.html">Service Mobile App</a></li>
-                        <li><a href="service-marketing.html">Service Digital Marketing</a></li>
-                        <li><a href="service-graphic.html">Service Graphic</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Shortcodes</a>
-                    <ul>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="typography.html">Typography</a></li>
-                        <li><a href="button.html">Buttons</a></li>
-                        <li><a href="locations.html">Office Location</a></li>
-                        <li><a href="hover-animation.html">Hover Animation</a></li>
-                        <li><a href="faq.html">FAQs</a>	</li>
-                        <li><a href="tabs.html">Tabs</a></li>
-                        <li><a href="error.html">404 Page</a></li>
-                        <li><a href="gradients.html">Background Gradients</a></li>
-                        <li><a href="popup-modal.html">Popup Modal</a></li>
-                        <li><a href="lists.html">Lists</a></li>
-                        <li><a href="header-v1.html">Header v1</a></li>
-                        <li><a href="header-v2.html">Header v2</a></li>
-                        <li><a href="header-v3.html">Header v3</a></li>
-                        <li><a href="footer-design.html">Footer</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Portfolio</a>
-                    <ul>
-                        <li><a href="portfolio.html">Portfolio Grid 1</a> </li>
-                        <li><a href="portfolio-2.html">Portfolio Grid 2</a> </li>
-                        <li><a href="portfolio-block.html">Portfolio Wide Block</a> </li>
-                        <li><a href="portfolio-details.html">Portfolio Details</a> </li>
-                    </ul>
-                </li>
-                <li><a href="#">Blog</a>
-                    <ul>
-                        <li><a href="blog-grid-1.html">Blog Grid 1</a> </li>
-                        <li><a href="blog-grid-2.html">Blog Grid 2</a> </li>
-                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a> </li>
-                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a> </li>
-                        <li><a href="blog-single.html">Blog Single</a></li>
-                    </ul>
-                </li>
+                <li><a href="/">Home</a></li>
+                <li><a href="{{ route('static', ['get-quote']) }}">Get Quote</a></li>
             </ul>
             <ul class="bottom-nav">
                 <li class="prb">
-                    <a href="tel:+11111111111">
+                    <a href="tel:+2348167297386">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
                             <path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594
-c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448
-c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813
-C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"
+                            c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448
+                            c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813
+                            C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"
                             />
                         </svg>
                     </a>
                 </li>
                 <li class="prb">
-                    <a href="mailto:somewebmedia@gmail.com">
+                    <a href="mailto:info@cremir.com">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
                     </a>
                 </li>
                 <li class="prb">
-                    <a href="skype:niwax.company?call">
-                        <svg enable-background="new 0 0 24 24" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="m23.309 14.547c1.738-7.81-5.104-14.905-13.139-13.543-4.362-2.707-10.17.352-10.17 5.542 0 1.207.333 2.337.912 3.311-1.615 7.828 5.283 14.821 13.311 13.366 5.675 3.001 11.946-2.984 9.086-8.676zm-7.638 4.71c-2.108.867-5.577.872-7.676-.227-2.993-1.596-3.525-5.189-.943-5.189 1.946 0 1.33 2.269 3.295 3.194.902.417 2.841.46 3.968-.3 1.113-.745 1.011-1.917.406-2.477-1.603-1.48-6.19-.892-8.287-3.483-.911-1.124-1.083-3.107.037-4.545 1.952-2.512 7.68-2.665 10.143-.768 2.274 1.76 1.66 4.096-.175 4.096-2.207 0-1.047-2.888-4.61-2.888-2.583 0-3.599 1.837-1.78 2.731 2.466 1.225 8.75.816 8.75 5.603-.005 1.992-1.226 3.477-3.128 4.253z"/></svg>
+                    <a href="wa.me/2348167297386?text=">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                     </a>
                 </li>
             </ul>
@@ -181,16 +88,41 @@ C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C3
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="form-block fdgn2 mt10 mb10">
-                        <form action="#" method="post" name="feedback-form">
+                        <form action="{{ route('contact') }}" method="post" name="feedback-form">
+                            @csrf
                             <div class="fieldsets row">
-                                <div class="col-md-12"><input type="text" placeholder="Full Name" name="name"></div>
-                                <div class="col-md-12"><input type="email" placeholder="Email Address" name="email"></div>
-                                <div class="col-md-12"><input type="number" placeholder="Contact Number" name="phone"></div>
-                                <div class="col-md-12"><input type="text" placeholder="Subject" name="subject"></div>
-                                <div class="col-md-12"><textarea placeholder="Message" name="message"></textarea></div>
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Enter your name" name="name" required="required" data-error="Name is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="email" name="email" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="text" name="phone" placeholder="Enter your phone number" required="required" data-error="Phone No is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Enter subject " name="subject" required="required" data-error="Specify the subject of conversation" >
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea placeholder="Message"  name="message" required="required" data-error="Please leave us a message"></textarea>
+                                    @error('message')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
                             </div>
+                            <input type="hidden" name="agreement" value="on">
                             <div class="fieldsets mt20 pb20">
-                                <button type="submit" name="submit" class="lnk btn-main bg-btn" data-dismiss="modal">Submit <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
+                                <button type="submit" name="submit" class="lnk btn-main bg-btn" >Submit <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
                             </div>
                         </form>
                     </div>
