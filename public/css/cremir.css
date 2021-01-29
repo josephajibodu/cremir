@@ -1,0 +1,10 @@
+.header-heading h1 {
+    font-size: 45px !important;
+    line-height: 72px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.invalid-feedback {
+    margin-bottom: 0.5rem;
+}
