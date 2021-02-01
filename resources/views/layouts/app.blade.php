@@ -20,6 +20,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/cremir.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    @stack('css')
 </head>
 <body>
 <!--Start Preloader -->
@@ -63,10 +64,10 @@
         @if (Session()->has('error'))
           Swal.fire({
               title: 'Ooops!!!',
-              text: '{{ $error }}',
+              text: '{{ session('error') }}',
               icon: 'error',
             })
-        @elseif (Session()->has('success'))
+        @elseif (session()->has('success'))
         Swal.fire({
             title: 'Welcome!',
             text: '{{ session('success') }}',

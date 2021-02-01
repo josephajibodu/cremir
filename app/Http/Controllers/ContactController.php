@@ -22,7 +22,6 @@ class ContactController extends Controller
         // return new \App\Mail\Contact($request->all());
         SendContactMail::dispatch($request->all())->afterResponse();
 
-
         return back()->with('success', 'Thanks for contacting us, We will get back to you soon!');
 
     }
