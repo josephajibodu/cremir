@@ -62,7 +62,8 @@
                         <div class="fieldsets row">
                             <div class="col-md-6">
                                 <select name="slots" wire:model="slots" class="@error('slots') is-invalid @enderror">
-                                    <option value="1" selected>1</option>
+                                    <option>Select slot(s)</option>
+                                    <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>

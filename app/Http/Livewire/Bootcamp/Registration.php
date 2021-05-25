@@ -25,7 +25,7 @@ class Registration extends Component
         'lastname' => 'required|string|min:5|max:255',
         'email' => 'required|email|max:255|unique:users',
         'phonenumber' => ['required', 'regex:/^((\+?234)|(0))[7-9]{1}[0-1]{1}[0-9]{8}$/','min:11', 'max:25'],
-        // 'slots' => 'numeric|min:5|max:255',
+        'slots' => 'required',
         'message' => 'nullable|string',
     ];
 
