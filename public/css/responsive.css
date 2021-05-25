@@ -371,3 +371,48 @@ h2 { font-size: 24px; line-height: 32px}
 .case-study4 .card-stats .statistics {padding: 10px}
 .case-study4 .statistics h3 {font-size: 15px; margin: 10px 0 0}
 }
+
+
+/**start update 1.7 start from here**/
+@media only screen and (max-width:767px) {
+
+.rpb-cart-table table tr td.rpbrs-titl::before, .rpb-cart-table table tr td.rpbrs-titl::before {
+   content: attr(data-title) ": ";
+    font-weight: 700;
+    float: left;
+}
+.rpb-cart-table table tr td, .rpb-cart-table table tr td {
+    display: block;
+    text-align: right!important;
+}
+.rpb-cart-table table  thead, .rpb-cart-table table thead {
+    display: none;
+}
+.rpb-cart-table table .product-thumbnail{
+	display: none;
+}
+.cart-pg-coupon input, .cart-pg-coupon button {
+    width: 48%;}
+
+.update-cart button{width: 100%;}
+.post-info a.btn-main {
+	width: max-content;
+    margin: 10px 0 0 0;
+    display: block;
+}
+
+}
+
+@media only screen and (max-width: 520px){
+	.btn-grp a + a{margin-top: 15px;}
+	.btn-grp a {width: 100%; margin: 0;}
+.custom-control label {
+    font-size: 12px;
+    padding: 0 0 0 8px;
+    text-indent: 1px;
+    line-height: 16px;
+}
+
+}
+
+/**end update 1.7 start from here**/

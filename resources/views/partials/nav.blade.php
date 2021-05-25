@@ -43,8 +43,29 @@
       </div>
       <div class="mobile-menu2">
         <ul class="mob-nav2">
-          <li><a href="#" class="btn-round- trngl btn-br bg-btn btshad-b1" data-toggle="modal"
-              data-target="#menu-popup"><i class="fas fa-envelope-open-text"></i></a></li>
+          <!-- <li><a href="#" class="btn-round- trngl btn-br bg-btn btshad-b1" data-toggle="modal"
+              data-target="#menu-popup"><i class="fas fa-envelope-open-text"></i></a></li> -->
+          <li class="contact-show"><a href="#" class="btn-round- trngl btn-br bg-btn"><i
+                class="fas fa-phone-alt"></i></a>
+            <div class="contact-inquiry">
+              <div class="contact-info-">
+                <div class="contct-heading">Cremir Contacts</div>
+                <div class="inquiry-card-nn hrbg">
+                  <div class="title-inq-c">FOR HR DEPARTMENT</div>
+                  <ul>
+                    <li class="mb0"><img src="{{ asset('images/flags/ng.svg') }}" alt="Nigeria office" class="flags-size"> <a
+                        href="tel:2348167297386">+234 816 7297 386</a></li>
+                  </ul>
+                </div>
+                <div class="inquiry-card-nn">
+                  <div class="title-inq-c">FOR SALES DEPARTMENT</div>
+                  <ul>
+                    <li><i class="fas fa-envelope"></i><a href="mailto:info@cremir.org">info@cremir.org</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
           <li class="navm-"> <a class="toggle" href="#"><span></span></a></li>
         </ul>
       </div>
@@ -53,6 +74,7 @@
     <nav id="main-nav">
       <ul class="first-nav">
         <li><a href="/">Home</a></li>
+        <li><a href="{{ route('bootcamp') }}">Bootcamp</a></li>
         <li><a href="{{ route('static', ['get-quote']) }}">Get Quote</a></li>
       </ul>
       <ul class="bottom-nav">
@@ -155,3 +177,4 @@
 <!--Mobile contact-->
 
 <!--End Header -->
+
