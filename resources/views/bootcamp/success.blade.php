@@ -14,7 +14,7 @@
                             <div class="images mt20">
                                 <span class="fa fa-check-circle text-success fa-4x wow zoomInDown" data-wow-delay=".6s"></span>
                             </div>
-                            <a href="./" class="btn-outline">Click here to join others</a>
+                            <a href="https://chat.whatsapp.com/KSeXbrSF4D7AC6rSnheldW" class="btn-outline">Click here to join others</a>
                         </div>
                         @endif
 
@@ -25,7 +25,7 @@
                             <div class="images mt20">
                                 <span class="fa fa-times text-danger fa-4x wow zoomInDown" data-wow-delay=".6s"></span>
                             </div>
-                            <a href="./" class="btn-outline">Click here to connect with me</a>
+                            <a href="https://wa.link/1ppghj" class="btn-outline">Click here to connect with me</a>
                         </div>
                         @endif
                     </div>
