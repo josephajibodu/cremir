@@ -78,7 +78,7 @@ class PaymentService
         // Update the db order record (including parameters that didn't exist before the order is completed. for audit purpose)
         // Give value for the order
         // Update the order to note that you have given value for the order
-        $order->status = 'succeed';
+        $order->status = 'successful';
         $order->save();
         // You can also redirect to your success page from here
         return $isWebhook ===  true ? exit() : redirect()->route('bootcamp.payment.success')->with('success', 'Payment successful!  Check the order tab for update. It should take 15-20 minutes!');
