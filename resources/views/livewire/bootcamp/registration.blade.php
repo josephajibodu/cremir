@@ -5,7 +5,6 @@
                 <h3 class="mb10">Bootcamp Registration</h3>
                 <p>Dare to challenge world wide? Then continue ...</p>
                 <p class="font-weight-bold">{{ $plan['title'] }} PLAN</p>
-                <p>{{ $registering }}</p>
                 @if (session()->has('registration'))
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     {{ session('registration') }}
