@@ -57,7 +57,7 @@ class PaymentService
         
         // Check if you have previously given value for the order. If you have, redirect to your successpage else, continue
         if ($order->status === 'successful') {
-            return $isWebhook ===  true ? exit() : redirect()->route('bootcamp.payment.success')->with('success', 'Payment successful! Check the order tab for update. It should take 15-20 minutes!');
+            return $isWebhook ===  true ? exit() : redirect()->route('bootcamp.payment.success')->with('success', 'Payment successful! ');
         }
         // Confirm that the $data['data']['status'] is 'successful'
         if ($data['data']['status']  !== 'successful') {
@@ -81,6 +81,6 @@ class PaymentService
         $order->status = 'successful';
         $order->save();
         // You can also redirect to your success page from here
-        return $isWebhook ===  true ? exit() : redirect()->route('bootcamp.payment.success')->with('success', 'Payment successful!  Check the order tab for update. It should take 15-20 minutes!');
+        return $isWebhook ===  true ? exit() : redirect()->route('bootcamp.payment.success')->with('success', 'Payment successful!');
     }
 }
