@@ -19,7 +19,7 @@
     <!-- template-style-->
     <link href="{{ asset('css/style.css?v2.0') }}" rel="stylesheet">
     <link href="{{ asset('css/responsive.css?v2.0') }}" rel="stylesheet">
-    <link href="{{ asset('css/cremir.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/cremir.css?v2.0') }}" rel="stylesheet">
     @livewireStyles
     @stack('css')
 </head>
