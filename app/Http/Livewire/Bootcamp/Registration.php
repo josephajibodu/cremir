@@ -107,7 +107,7 @@ class Registration extends Component
                 "customizations" => [
                     "title" => "CREMIR WEB-DEV BOOTCAMP",
                     "description" => "Payment for ".$this->slots." ".strtoupper($this->plan['title'])." slot(s) at the 4-week web development bootcamp",
-                    "logo" => "https =>//cremir.org/images/logo.png",
+                    // "logo" => "https =>//cremir.org/images/logo.png",
                 ]
             ];
 
