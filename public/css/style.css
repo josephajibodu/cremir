@@ -2,25 +2,16 @@
 Author: Rajesh-Doot
 File Description: Main CSS file of the template*/
 /**Table of contents**
-1. Default css
-- Header section
-- Hero section
-- About section
-- Service section
+1. Default css				- Header section			- Hero section					- About section					- Service section
 - Statistics section
-- Portfolio Section
-- Clients section
-- Work category section
-- Testimonial section
-- Enquire form section
-- Our office section
-- Reviews section
-- Footer section
-2. About page               3. Team page                4. Portfolio page               5. Service page                 6. Service details page
+- Portfolio Section			- Clients section			- Work category section			- Testimonial section			- Enquire form section
+- Our office section		- Reviews section			- Footer section				2. About page               	3. Team page
+4. Portfolio page           5. Service page             6. Service details page
 7. Pricing page             8. Case study page          9. Blog page                    10.Contact page                 11.404 page
 12.Faq & accordion page     13.Freelance Homepage       14.Lead Generation Homepage     15.Client review                16.Digital agency homepage
-17.Features                 17.Help css                 18.Gredient css                 19.Dark mode css                **/
+17.1.7 Update 				18.Features                 19.Help css                 	20.Gredient css                 21.Dark mode css    **/
 /*scrollbar theme*/
+
 ::-webkit-scrollbar {width:6px;}
 ::-webkit-scrollbar-track { background: #e8e8e8;}
 ::-webkit-scrollbar-thumb:hover {background: #fb5496;}
@@ -2400,6 +2391,375 @@ right: 0; left: 0; text-align: center; top: 0; font-weight: 900; text-transform:
 .closes {right: 8px; font-size: 35px;  font-weight: 700; top: -2px; color: #d6d6d6; border: 0; background: transparent; }
 .popup-modals .modal-dialog {max-width: 600px; }
 .modal-body {position: relative; -ms-flex: 1 1 auto; flex: 1 1 auto; padding: 30px; }
+
+
+
+/**start update 1.7 from here**/
+/*shop page*/
+
+@media (min-width: 1200px){
+.shop-container{max-width: 1110px !important}
+}
+
+.shop-tags-list li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.shop-tags-list li a{
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #f2effc;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 225, 0.08);
+    color: #050748;
+    padding: 12px 16px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.shop-tags-list li a.active{
+	background-color: #436ad6;
+    color: #fff;
+}
+.shop-tags-list{text-align: center;}
+.shop-tags-list li a span{
+	    display: inline-block;
+    margin: 0 0 0 4px;
+}
+.main-shop-catte a{
+display: inline-block;
+    background-color: #e2e2ef;
+    border: 1px solid #f2effc;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 225, 0.08);
+    color: #050748;
+    padding: 18px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.main-shop-catte a.active{
+	background-color: #436ad6;
+    color: #fff;
+}
+.main-shop-catte {
+    text-align: center;
+}
+.shop-products-bhv{
+	background: #fafafa;
+}
+.rpb-shop-items-dv{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	text-align: inherit;
+}
+.rpb-shop-items-dv a{
+	padding: 0;margin: 0;
+}
+.rpb-shop-items-img{}
+.rpb-shop-items-info{padding: 16px;}
+.rpb-shop-items-tittl h3{
+	font-size: 16px;
+    line-height: 1;
+}
+.rpb-shop-items-tittl h3 a{
+	    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: 24px;
+}
+.rpb-shop-items-tittl p.tags-itmm{
+	font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    color: #6a6a8e;
+}
+
+.rpb-shop-items-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.rpb-shop-inf-ll{}
+.rpb-itm-pric span.regular-prz{
+	font-size: 20px;
+    font-weight: 100;
+    color: #6a6a8e;
+    text-decoration: line-through;
+    margin: 0 0 0 6px;	    
+}
+.rpb-itm-pric span.offer-prz{
+	   font-size: 20px;
+    font-weight: 700;
+    color: #050748;
+}
+.rpb-tim-rate ul li a{
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+}
+.rpb-tim-rate ul li{margin: 0;}
+.rpb-tim-rate{margin-top: 5px;}
+.rpb-itm-sale{
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;}
+
+.rpb-shop-inf-rr{
+	align-items: flex-end;
+    display: flex;
+}    
+.rpb-shop-inf-rr a.rpb-shop-prev{
+	display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #f2effc;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 225, 0.08);
+    color: #050748;
+    padding: 12px 16px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.pagination {
+    display: -ms-flexbox;
+    display: flow-root;
+    list-style: none;
+    border-radius: .25rem;
+    margin: 60px 0 0 0;
+    text-align: center;
+}
+.pagination a{
+  display: inline-block;
+  padding: 10px 18px;
+  color: #222;
+}
+.pagi1 a{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  text-align: center;
+}
+
+.pagi1 a.is-active{
+  background-color: #436ad6;
+  border-radius: 100%;
+  color: #fff;
+}
+
+/*shop details*/
+
+.rpb-shop-prevw{
+	margin-bottom: 40px;
+    background-color: #f6f6f7;
+    padding: 20px;
+}
+/*tab css*/
+.tab-17 .nav-tabs{
+	background: #f6f6f7;
+    padding: 0px 15px;
+}
+
+.tab-17.tabs-layout .nav-tabs .nav-link.active {
+    color: #6a6a8e;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 0;
+    border-bottom: 2px solid #ff358d;
+}
+.tab-17.tabs-layout .nav-tabs .nav-link {
+    border: 0px solid transparent;
+    color: #6a6a8e;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 15px;
+    border-bottom: 2px solid #f6f6f7;
+}
+.badges {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 50%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.rpb-item-review .reviews-card {
+    position: relative;
+    z-index: 9;
+    background: #f6f6f7;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.rpb-item-infodv{
+	    margin-bottom: 40px;
+    background-color: #f6f6f7;
+    padding: 20px;
+}
+.nx-rt{
+    float: right;
+    font-size: 15px;
+    width: 60%;
+    text-align: right;}
+
+.rpb-item-infodv ul li strong {
+color: #050748;
+    font-size: 15px;
+    float: left;
+    width: 40%;
+}
+.rpb-item-infodv ul li + li {
+    border-top: 1px solid #e0e0e0;  
+}
+
+.rpb-item-infodv ul li {
+    padding: 15px 0;
+        display: flow-root;
+}
+.btn-grp a{	 margin: 0 10px;}
+
+/*cart page*/
+.div-for-data {
+border: 1px solid #e0e0e0;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    border-radius: 8px;
+    background: #fff;
+        border-collapse: separate;
+}
+.rpb-cart-table table.cart_table th {
+    padding: 15px 20px;
+    color: #050748;
+    font-size: 17px;
+}
+
+.rpb-cart-table table.cart_table td {
+border-top: 1px solid #e0e0e0;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #050748;
+}
+.rpb-cart-table table .product-thumbnail img {
+    width: 60px;
+}
+
+.rpb-cart-table table .product-name a {
+   color: #050748;
+}
+.rpb-cart-table a.remove {
+display: block;
+    font-size: 24px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 100%;
+    color: #ff0000!important;
+    text-decoration: none;
+    font-weight: 700;
+    border: 0;
+    background: #efefef;
+}
+.update-cart{text-align: right;}
+.cart-pg-coupon input{
+	width: 180px;
+    height: 45px;
+    padding: 0px 10px;
+    margin: 0px 0 0px 0;
+    color: #172b43;
+    font-size: 16px;
+    outline: none;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+button.smllbtnn{ 
+	line-height: 45px;
+    color: #fff;
+    border-radius: 8px;
+    padding: 0 20px;
+    border: 0;}
+
+
+.cart-extra-sevc{padding: 20px;}
+
+.post-info h5 a{
+	color: #050748;
+    font-size: 16px;
+}
+.mt5{margin-top: 5px;}
+
+table {
+    color: #050748;
+}
+table.border{border-radius: 8px;}
+.btn-small {
+    font-size: 15px;
+    font-weight: 400;  
+    padding: 0px 20px;
+    line-height: 35px;  
+}
+.media + .media {    margin-top: 20px;}
+
+/*contact page 2*/
+.map-div iframe{width: 100%; height: 200px; border: 0;}
+.contact2dv{
+	background: #e7fbff;
+    padding: 30px;
+}
+.info-wrapr .dbox p span {
+    color: #6a6a8e;
+    font-size: 20px;
+    display: block;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.info-wrapr .dbox {
+    width: 100%;
+     color: #6a6a8e;
+    margin-bottom: 25px;
+}
+
+.info-wrapr .icon i{
+	    font-size: 25px;
+}
+.info-wrapr .text a{
+	 color: #6a6a8e;
+}
+.pr30{padding-right: 30px;}
+.pl30{padding-left: 30px;}
+.addtocart{
+	    width: 20px;
+    height: 20px;
+    background: #fafafa;
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: -6px;
+    line-height: 20px;
+    border-radius: 100%;
+    color: #050748;
+    box-shadow: 0px 5px 10px rgb(93 0 39 / 44%);
+    font-size: 14px;
+    font-weight: bold;
+}
+/**end update 1.7 from here**/
+
 /**Features**/
 .custom-file-input:focus~.custom-file-label {  border-color: #ced4da;  box-shadow: none;}
 .dropcap{    float: left;   font-size: 45px;   line-height: 1;   padding-right: 10px;   text-transform: uppercase;}
@@ -2477,6 +2837,7 @@ html .pm0{padding-bottom:0;}
 html .mt0{margin-top: 0px;}
 html .mb0{margin-bottom: 0;}
 html .mt10{margin-top: 10px;}
+html .ml10{margin-left: 10px;}
 html .mt20{margin-top: 20px;}
 html .mt30{margin-top: 30px;}
 html .mt40{margin-top: 40px;}

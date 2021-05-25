@@ -8,3 +8,11 @@
 .invalid-feedback {
     margin-bottom: 0.5rem;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.skills-img {
+    max-height: 150px;
+}

@@ -10,23 +10,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#c7ecff">
     <!--website-favicon-->
-    <link href="images/favicon.png" rel="icon">
+    <link href="{{ asset('images/favicon.png') }}" rel="icon">
     <!--plugin-css-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/plugin.min.css" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/plugin.min.css') }}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- template-style-->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/cremir.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+    @livewireStyles
+    <link href="{{ asset('css/cremir.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     @stack('css')
 </head>
 <body>
 <!--Start Preloader -->
 <div class="onloadpage" id="page_loader">
     <div class="pre-content">
-        <div class="logo-pre"><img src="images/logo.png" alt="Logo" class="img-fluid" /></div>
+        <div class="logo-pre"><img src="{{ asset('images/logo.png') }}" alt="Logo" class="img-fluid" /></div>
         <div class="pre-text-"><span>Cremir - Creative Website Design Agency</span>Have Patience</div>
     </div>
 </div>
@@ -40,15 +41,15 @@
 <!--scroll to top-->
 <a id="scrollUp" href="#top"></a>
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/plugin.min.js"></script>
+<script src="{{ asset('js/vendor/modernizr-3.5.0.min.js') }}"></script>
+<script src="{{ asset('js/jquery.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/popper.min.js') }}"></script>
+<script src="{{ asset('js/plugin.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-<script src="js/preloader.js"></script>
+<script src="{{ asset('js/preloader.js') }}"></script>
 <!--common script file-->
-<script src="js/main.js"></script>
+<script src="{{ asset('js/main.js') }}"></script>
 <script>
   $(window).on('load', function() {
         @if($errors)
@@ -88,6 +89,8 @@
         @endif
     });
 </script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+@livewireScripts
 @stack('script')
 </body>
 </html>

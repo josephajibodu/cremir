@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-3 col-sm-6  ftr-brand-pp">
-                    <a class="navbar-brand mt30 mb25" href="#"> <img src="images/logo.png" alt="Logo" width="100" /></a>
+                    <a class="navbar-brand mt30 mb25" href="#"> <img src="{{ asset('images/logo.png') }}" alt="Logo" width="100" /></a>
                     <p>We are a team of creatives focusing majorly on loosing your business knots.</p>
                     <a href="{{ route('static', 'get-quote') }}" class="btn-main bg-btn3 lnk mt20">Become Partner <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
                 </div>

@@ -21,5 +21,10 @@ Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store']
 Route::post('/get-quote', [App\Http\Controllers\ContactController::class, 'getQuote'])->name('quote');
 Route::get('/preview', [App\Http\Controllers\ContactController::class, 'preview']);
 
+Route::get('/bootcamp', [App\Http\Controllers\BootcampController::class, 'index'])->name('bootcamp');
+Route::get('/bootcamp/payment', [App\Http\Controllers\BootcampController::class, 'payment'])->name('bootcamp.payment');
+Route::get('/bootcamp/payment/callback', [App\Http\Controllers\PaymentController::class, 'callback'])->name('bootcamp.payment.callback');
+Route::get('/bootcamp/payment/status', [App\Http\Controllers\PaymentController::class, 'status'])->name('bootcamp.payment.success');
+
 // Route for static files
 Route::get('/{slug}', [App\Http\Controllers\StaticController::class, 'show'])->name('static');
