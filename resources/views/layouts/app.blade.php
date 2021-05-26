@@ -28,7 +28,7 @@
 <div class="onloadpage" id="page_loader">
     <div class="pre-content">
         <div class="logo-pre"><img src="{{ asset('images/logo.png') }}" alt="Logo" class="img-fluid" /></div>
-        <div class="pre-text-"><span>Cremir - Creative Website Design Agency</span>Have Patience</div>
+        <div class="pre-text-"><span>Cremir - Creative Website Design Agency</span>Relaaaax ... 😎</div>
     </div>
 </div>
 <!--End Preloader -->
@@ -43,13 +43,13 @@
 <!-- js placed at the end of the document so the pages load faster -->
 <script src="{{ asset('js/vendor/modernizr-3.5.0.min.js') }}"></script>
 <script src="{{ asset('js/jquery.min.js') }}"></script>
-<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 <!-- <script src="{{ asset('js/popper.min.js') }}"></script> -->
 <script src="{{ asset('js/plugin.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script src="{{ asset('js/preloader.js') }}"></script>
 <!--common script file-->
-<script src="{{ asset('js/main.js') }}"></script>
+<script src="{{ asset('js/main.js?v2.0') }}"></script>
 <script>
   $(window).on('load', function() {
         @if($errors)
