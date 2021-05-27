@@ -11,7 +11,8 @@ class Plan extends Component
             'icon' => 'plan-2',
             'title' => 'Intermediate',
             'subtitle' => 'Wanna design websites?',
-            'amount' => 20000,
+            'amount' => 16000,
+            'original_amount' => 20000,
             'duration' => 'Two(2) Weeks',
             'benefits' => ['Website Design', 'HTML5', 'CSS3', 'Javascript', 'Website Deployment', '2 Projects']
         ],
@@ -19,7 +20,8 @@ class Plan extends Component
             'icon' => 'plan-3',
             'title' => 'Advanced',
             'subtitle' => 'Badass Web developer?',
-            'amount' => 30000,
+            'amount' => 24000,
+            'original_amount' => 30000,
             'duration' => 'Four(4) Weeks',
             'benefits' => ['All Basic Packages + ', 'Web development', 'Backend (PHP)', 'Database (MySQL)', 'Github', 'SSH', '3+ Projects']
         ],

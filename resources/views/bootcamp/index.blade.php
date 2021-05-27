@@ -215,6 +215,9 @@
         <div class="common-heading ptag">
           <span>Training Categories</span>
           <h2>Choose your preferred training category</h2>
+          <hr>
+          <h5><span class="text-danger">20% Discount</span> till Wednesday, 2nd of June, 2021</h5>
+          <hr>
         </div>
       </div>
     </div>
