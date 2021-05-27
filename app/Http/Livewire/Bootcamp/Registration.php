@@ -21,11 +21,11 @@ class Registration extends Component
     public $paymentLink;
 
     protected $rules = [
-        'firstname' => 'required|string|min:5|max:255',
-        'lastname' => 'required|string|min:5|max:255',
+        'firstname' => 'required|string|min:2|max:255',
+        'lastname' => 'required|string|min:2|max:255',
         'email' => 'required|email|max:255|unique:users',
         'phonenumber' => ['required', 'regex:/^((\+?234)|(0))[7-9]{1}[0-1]{1}[0-9]{8}$/','min:11', 'max:25'],
-        'slots' => 'required',
+        'slots' => 'nullable',
         'message' => 'nullable|string',
     ];
 
