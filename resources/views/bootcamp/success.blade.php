@@ -28,6 +28,8 @@
                             <a href="https://wa.link/1ppghj" class="btn-outline">Click here to connect with me</a>
                         </div>
                         @endif
+                        <hr>
+                        <h4 class="mb10 font-italic">Know someone who might be interested in this. Please share this link with them 🌏</h4>
                     </div>
                 </div>
             </div>

@@ -86,9 +86,14 @@
         <div class="container shop-container">
           <div class="row justify-content-center">
               <div class="col-md-8 text-center">
+                @if($alreadyRegistered && (!$registering))
+                <h4 class="mb10 font-italic">Welcome back 😎, {{ $user->firstname }}. Complete your payment and join the train <br>
+                 If you have any difficulties, you can contact me through call/whatsapp on <strong>08167297386</strong></h4>
+                 <hr>
+                 @endif
                 <h3 class="mb10">Bootcamp Payment</h3>
                 <p>Dare to challenge world wide? ...</p>
-                <p class="font-weight-bold">{{ $plan['title'] }} PLAN</p>
+                <p class="font-weight-bold text-uppercase">{{ $plan['title'] }} PLAN</p>
                 
                 @if (session()->has('payment_error'))
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -115,11 +120,11 @@
 
                       <li>
                           <strong>Spots</strong>
-                          <div class="nx-rt"> {{ $slots }} </div>
+                          <div class="nx-rt"> Just you </div>
                       </li>
                       <li>
-                          <a href="#" class="btn-main bg-btn lnk w-100" wire:click="initiatePayment" wire:loading.attr="disabled"><i class="fa fa-spinner fa-spin" wire:loading.delay wire:loading:target="initiatePayment"></i> Make Payment Now <i class="fas fa-shopping-cart"></i> <span class="circle"></span> </a>
-                          <a href="#" class="btn-main bg-btn3 lnk w-100 mt10">Chat with Us <span class="circle"></span> </a>
+                          <a class="btn-main bg-btn w-100" wire:click="initiatePayment" wire:loading.attr="disabled"><i class="fa fa-spinner fa-spin" wire:loading.delay wire:loading:target="initiatePayment"></i> Make Payment <span class="circle"></span> </a>
+                          <a href="https://wa.link/1ppghj" target="_blank" class="btn-main bg-btn3 lnk w-100 mt10">Chat with Us <span class="circle"></span> </a>
                       </li>
 
                   </ul>

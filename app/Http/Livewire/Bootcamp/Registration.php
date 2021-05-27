@@ -19,11 +19,12 @@ class Registration extends Component
     public $order;
     public $user;
     public $paymentLink;
+    public $alreadyRegistered = false;
 
     protected $rules = [
         'firstname' => 'required|string|min:2|max:255',
         'lastname' => 'required|string|min:2|max:255',
-        'email' => 'required|email|max:255|unique:users',
+        'email' => 'required|email|max:255',
         'phonenumber' => ['required', 'regex:/^((\+?234)|(0))[7-9]{1}[0-1]{1}[0-9]{8}$/','min:11', 'max:25'],
         'slots' => 'nullable',
         'message' => 'nullable|string',
@@ -52,36 +53,52 @@ class Registration extends Component
     {
         $this->validate();
 
-        // Set order value
-        $amt = intval($this->plan['amount']);
-        $this->amount = number_format($amt);
+        $this->user = User::where('email', $this->email)->first();
+        
+        if (is_null($this->user)) {
+            // Set order value
+            $amt = intval($this->plan['amount']);
+            $this->amount = number_format($amt);
 
-        try {
-            DB::beginTransaction();
-            // Register Users
-            $this->user = User::create([
-                'firstname' => $this->firstname,
-                'lastname' => $this->lastname,
-                'email' => $this->email,
-                'phonenumber' => $this->phonenumber,
-                'password' => trim($this->lastname),
-            ]);
+            try {
+                DB::beginTransaction();
+                // Register Users
+                $this->user = User::create([
+                    'firstname' => $this->firstname,
+                    'lastname' => $this->lastname,
+                    'email' => $this->email,
+                    'phonenumber' => $this->phonenumber,
+                    'password' => trim($this->lastname),
+                ]);
+                
+                // Create Order
+                $this->order = Order::create([
+                    'user_id' => $this->user->id,
+                    'reference' => $this->reference($this->user->id),
+                    'amount' => $amt * 100,
+                    'unit' => 1
+                ]);
+                
+                // No problem : commit changes
+                DB::commit();
+        
+            } catch (\Throwable $th) {
+                DB::rollBack();
+                // Flash errors
+                $this->addError('registration', 'Could not continue with the registration. Try again.');
+                throw $th;
+            }
+        } else {
+            // Get the order created
+            $order = Order::where('user_id', $this->user->id)->first();
+
+            if ($order->status == 'successful') {
+                $this->addError('registration', 'You have completed your registration. Contact the your guide on 08167297386');
+                return;
+            }
             
-            // Create Order
-            $this->order = Order::create([
-                'user_id' => $this->user->id,
-                'reference' => $this->reference($this->user->id),
-                'amount' => $amt * 100,
-                'unit' => 1
-            ]);
-            
-            // No problem : commit changes
-            DB::commit();
-        } catch (\Throwable $th) {
-            DB::rollBack();
-            // Flash errors
-            $this->addError('registration', 'Could not continue with the registration. Try again.');
-            throw $th;
+            $this->order = $order;
+            $this->alreadyRegistered = true;
         }
 
         // Switch to payment mode
