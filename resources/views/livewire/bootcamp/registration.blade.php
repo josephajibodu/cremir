@@ -5,9 +5,11 @@
                 <h3 class="mb10">Bootcamp Registration</h3>
                 <p>Dare to challenge world wide? Then continue ...</p>
                 <p class="font-weight-bold">{{ $plan['title'] }} PLAN</p>
-                @if (session()->has('registration'))
-                <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    {{ session('registration') }}
+                @if (session()->has('message'))
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                    <p>Pizza 🍕 for you. </p>
+                    <hr>
+                    {{ session('message') }}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>

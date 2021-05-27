@@ -101,7 +101,7 @@ class Registration extends Component
             $order = Order::where('user_id', $this->user->id)->first();
 
             if ($order->status == 'successful') {
-                $this->addError('registration', 'You have completed your registration. Contact the your guide on 08167297386');
+                session()->flash('message', 'You have completed your registration. Contact the your guide on 08167297386');
                 return;
             }
             
