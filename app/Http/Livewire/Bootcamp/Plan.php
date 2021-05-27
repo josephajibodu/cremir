@@ -9,7 +9,7 @@ class Plan extends Component
     private $plans = [
         'basic' => [
             'icon' => 'plan-2',
-            'title' => 'Intermediate',
+            'title' => 'Silver',
             'subtitle' => 'Wanna design websites?',
             'amount' => 16000,
             'original_amount' => 20000,
@@ -18,7 +18,7 @@ class Plan extends Component
         ],
         'advanced' => [
             'icon' => 'plan-3',
-            'title' => 'Advanced',
+            'title' => 'Gold',
             'subtitle' => 'Badass Web developer?',
             'amount' => 24000,
             'original_amount' => 30000,
@@ -30,12 +30,16 @@ class Plan extends Component
     public $plan;
     public $name;
     public $amount;
+    public $original_amount;
     public $prefered;
 
     public function mount()
     {
         $this->plan = collect($this->plans[$this->name]);
         $this->amount = number_format($this->plan['amount']);
+        if (isset($this->plan['original_amount'])) {
+            $this->original_amount = number_format($this->plan['original_amount']);
+        }
         $this->prefered = $this->name == 'advanced';
     }
 

@@ -16,6 +16,7 @@ class Registration extends Component
     public $payment = false;
     public $plan;
     public $amount;
+    public $original_amount;
     public $order;
     public $user;
     public $paymentLink;
@@ -42,6 +43,13 @@ class Registration extends Component
     public function updated($propertyName)
     {
         $this->validateOnly($propertyName);
+    }
+
+    public function mount()
+    {
+        if (isset($this->plan['original_amount'])) {
+            $this->original_amount = number_format($this->plan['original_amount']);
+        }
     }
 
     public function render()

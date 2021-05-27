@@ -5,6 +5,9 @@
             <span class="title">{{ $plan['title'] }}</span>
             <p class="title-sub">{{ $plan['subtitle'] }}</p>
             <h2 class="@if($prefered) text-white @endif"><sup>&#8358;</sup> {{ $amount }}</h2>
+            @if(isset($plan['original_amount']))
+            <h4 class="@if($prefered) text-white @endif"><del>{{ $original_amount }}</del></h4>
+            @endif
             <p class="duration font-weight-bold @if($prefered) text-white @endif">{{ $plan['duration'] }}</p>
             <div class="details">
                 <ul>

@@ -113,14 +113,18 @@
                       <li class="price">
                           <strong>Price</strong>
                           <div class="nx-rt">
-                              <div class="rpb-itm-pric"> <span class="offer-prz"> &#8358;{{ $amount }} </span>  <span class="regular-prz">&#8358;{{ $amount }}</span> 
-                              </div>
+                            <div class="rpb-itm-pric"> 
+                                <span class="offer-prz"> &#8358;{{ $amount }} </span>
+                                @if(isset($plan['original_amount']))
+                                <span class="regular-prz">&#8358;{{ $original_amount }}</span>
+                                @endif
+                            </div>
                           </div>
                       </li>
 
                       <li>
                           <strong>Spots</strong>
-                          <div class="nx-rt"> Just you </div>
+                          <div class="nx-rt"> Just you 😉</div>
                       </li>
                       <li>
                           <a class="btn-main bg-btn w-100" wire:click="initiatePayment" wire:loading.attr="disabled"><i class="fa fa-spinner fa-spin" wire:loading.delay wire:loading:target="initiatePayment"></i> Make Payment <span class="circle"></span> </a>
