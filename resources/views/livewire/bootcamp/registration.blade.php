@@ -60,24 +60,6 @@
                             </div>
                         </div>
                         <div class="fieldsets row">
-                            <div class="col-md-6">
-                                <select name="slots" wire:model="slots" class="@error('slots') is-invalid @enderror">
-                                    <option>Select slot(s)</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                                @error('slots')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div>
-
-                        </div>
-                        <div class="fieldsets row">
                             <div class="col-md-12">
                                 <textarea class="@error('message') is-invalid @enderror" wire:model="message" placeholder="Any message for us?" name="message"></textarea>
                                 @error('message')

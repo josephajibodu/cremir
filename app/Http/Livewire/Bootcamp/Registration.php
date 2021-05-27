@@ -53,7 +53,7 @@ class Registration extends Component
         $this->validate();
 
         // Set order value
-        $amt = intval($this->plan['amount']) * intval($this->slots);
+        $amt = intval($this->plan['amount']);
         $this->amount = number_format($amt);
 
         try {
@@ -71,8 +71,8 @@ class Registration extends Component
             $this->order = Order::create([
                 'user_id' => $this->user->id,
                 'reference' => $this->reference($this->user->id),
-                'amount' => intval($this->plan['amount']) * 100,
-                'unit' => $this->slots
+                'amount' => $amt * 100,
+                'unit' => 1
             ]);
             
             // No problem : commit changes
