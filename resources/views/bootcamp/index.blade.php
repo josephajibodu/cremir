@@ -37,7 +37,7 @@
             well equiped developers, hence we test your ability with full-stack projects and not a random academical
             computer-based-test which is irrelevant to website development.
           </p>
-          <p class="wow fadeInUp" data-wow-delay=".7s">Lastly, we prepare your to be ready for real-life projects. Hence, you'd be work-ready once you are done
+          <p class="wow fadeInUp" data-wow-delay=".7s">Lastly, we prepare you to be ready for real-life projects. Hence, you'd be work-ready once you are done
             with our training.</p>
 
           <a href="#bootcamp-pricing" class="btn-main bg-btn2 lnk mt30 wow zoomInDown" data-wow-delay=".9s">Start Now <i
