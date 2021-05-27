@@ -20,6 +20,11 @@ class PaymentService
           return redirect()->route('bootcamp')->with('error', 'Payment cancelled please try again.');
       }
 
+      // Handle failed orders
+      if (request()->has('status') && request()->status == 'failed') {
+        return redirect()->route('bootcamp')->with('error', 'Payment failed. Please try again');
+    }
+
       $orderID = Flutterwave::getTransactionIDFromCallback();
       
       $data = Flutterwave::verifyTransaction($orderID);
